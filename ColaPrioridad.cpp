@@ -42,7 +42,7 @@ void encolar ( int valor, int p ){
 
 void desencolar(){
     if ( estaVacia() ) //validamos el underflow
-        cout<<"\nERROR el stack esta vacio";
+        cout<<"\nERROR el stack esta vacio testing";
     else
     if( ptrCabeza == ptrCola){
         delete(ptrCabeza);
