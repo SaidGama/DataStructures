@@ -35,7 +35,7 @@ void pop (){
 void displayStack()
 {
     if ( estaVacio() )
-        cout<<"Stack esta vacio";
+        cout<<"\nStack esta vacio";
     else
     {
         Node *temp=cima;  //creamos un puntero temporal para almacenar cima
