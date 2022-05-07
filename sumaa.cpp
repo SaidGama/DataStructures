@@ -14,15 +14,13 @@ bool esPrimo(int num){
     return true; 
 }
 int espejo(int num) {
-
-	string Numchar;
+    int espejo=0;
+	string Numchar = to_string(num); 
 	string aux;
-	Numchar = to_string(num); 
-	aux = Numchar[0];
+    aux[0] = Numchar[0];
 	Numchar[0] = Numchar[1];
 	Numchar[1] = aux[0];
     stringstream espejochar(Numchar);
-    int espejo=0;
     espejochar >> espejo; 
     return espejo; 
 }
@@ -39,6 +37,6 @@ int suma(){
 }
 int main()
 {
-    cout << suma();
+    cout<<suma()<<endl;
 	return 0;
 }
