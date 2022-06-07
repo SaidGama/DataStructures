@@ -5,7 +5,6 @@ Carrera: Ingenieria en Sistemas Computacionales
 Ultima modificacion 27/05/22
 Examen 2do parcial Implementacion de tabla hash usando linear probing y separate  chaining
 */
-
 #include <iostream>
 #include "hashcerrada.h"
 #include "hashabierta.h"
