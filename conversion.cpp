@@ -63,11 +63,23 @@ void inorder(Node* raiz)
 }
 
 int main(){
-    Node *raiz = crearNodo(5);
-    raiz->arrayHijos.push_back(crearNodo(1)); //agrega la direccion al array de hijos
-    raiz->arrayHijos.push_back(crearNodo(7));
-    raiz->arrayHijos.push_back(crearNodo(8));
-    (raiz->arrayHijos[0]->arrayHijos).push_back(crearNodo(9));
+    Node *raiz = crearNodo("A");
+    raiz->arrayHijos.push_back(crearNodo("B")); 
+    raiz->arrayHijos.push_back(crearNodo("F"));
+    raiz->arrayHijos.push_back(crearNodo("C"));
+
+    raiz->arrayHijos[0]->arrayHijos.push_back(crearNodo("D"));
+    raiz->arrayHijos[0]->arrayHijos.push_back(crearNodo("E"));
+
+    raiz->arrayHijos[1]->arrayHijos.push_back(crearNodo("J"));
+    raiz->arrayHijos[1]->arrayHijos.push_back(crearNodo("I"));
+    raiz->arrayHijos[1]->arrayHijos.push_back(crearNodo("k"));
+
+    raiz->arrayHijos[2]->arrayHijos.push_back(crearNodo("G"));
+    raiz->arrayHijos[2]->arrayHijos.push_back(crearNodo("L")); 
+    raiz->arrayHijos[2]->arrayHijos.push_back(crearNodo("H"));
+    raiz->arrayHijos[2]->arrayHijos.push_back(crearNodo("J"));
+
     encode(raiz);
     inorder(raiz);
     return 0;
